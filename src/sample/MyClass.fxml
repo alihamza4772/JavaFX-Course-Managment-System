@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MyClass">
+   <children>
+      <Text layoutX="168.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME, " wrappingWidth="129.13671875">
+         <font>
+            <Font name="Cambria" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="NAME" layoutX="297.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="224.13671875">
+         <font>
+            <Font name="Cambria" size="25.0" />
+         </font>
+      </Text>
+      <TableView id="table" fx:id="Home_table" editable="true" layoutX="23.0" layoutY="62.0" onMouseClicked="#table_click" prefHeight="277.0" prefWidth="551.0">
+         <columns>
+            <TableColumn id="col_id" fx:id="subjid" prefWidth="130.0" text="ID" />
+            <TableColumn id="col_item" fx:id="subjname" prefWidth="276.0" text="NAME" />
+            <TableColumn id="col_qty" fx:id="subjgrade" prefWidth="152.0" text="GRADE" />
+         </columns>
+      </TableView>
+      <Button layoutX="39.0" layoutY="350.0" mnemonicParsing="false" onAction="#EXIT" prefHeight="36.0" prefWidth="129.0" text="EXIT" />
+      <Button layoutX="221.0" layoutY="350.0" mnemonicParsing="false" onAction="#DELETE" prefHeight="36.0" prefWidth="129.0" text="REMOVE" />
+      <Button layoutX="409.0" layoutY="350.0" mnemonicParsing="false" onAction="#ADD" prefHeight="36.0" prefWidth="129.0" text="ADD">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
